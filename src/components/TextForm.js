@@ -29,6 +29,7 @@ export default function TextForm(props) {
         var arr = text.split(/[ ]+/)
         setText(arr.join(" "))
         props.setMsg("success","Text is free of extra spaces.")
+        props.setProg(text.split(" ").length>=100?100:text.split(" ").length);
     }
 
     const textHandle = (event)=>{
