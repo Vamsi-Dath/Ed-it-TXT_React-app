@@ -1,15 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
 export default function Navbar(props) {
   return (
     <nav className="nav_bar">
       <ul>
-        <li><a href="/">HOME</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Contact</a></li>
-        <li><a href="/">Services</a></li>
-        <li><a href="/">{props.additional_item}</a></li>
+        <li><Link to="/">HOME</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/">Text Editor</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/not_available">{props.additional_item}</Link></li>
       </ul>
     </nav>
   )

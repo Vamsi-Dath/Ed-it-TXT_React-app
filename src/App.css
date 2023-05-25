@@ -14,14 +14,17 @@
 } */
 .nav_bar{
   margin: 0px;
-  background-color: rgb(49, 47, 47);
+  background-color: rgb(8, 37, 51);
 }
 ul{
   display:flex;
 }
 li{
   list-style: none;
-  margin:1% 2%;
+  margin-right:5%;
+  padding:10px 0;
+  font-weight: bold;
+
 }
 a{
   text-decoration: none;

@@ -1,10 +1,15 @@
 import './App.css';
 import Alert from './components/Alert';
-// import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import Progressbar from './components/Progressbar';
 import TextForm from './components/TextForm';
 import React, {useState} from 'react'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 // const name = 'Vamsi Dath';
 function App() {
@@ -26,14 +31,24 @@ function App() {
   }
   return (
     <>
+    <Router>
     <Navbar additional_item="Vamsi_I"/>
-    <Alert alert={alert} />
+    <Routes>
+      <Route path="/" element={<>
+        <Alert alert={alert} />
+        <Progressbar styleProg={styleProg}/>
+        <TextForm setMsg={setMsg} setProg={setProg}/>
+        </>
+      }/>
+      <Route path="/about" element={<About />}/>
+      <Route path="/services" element={<div className='container'><h1>Welcome to Ed-it TXT</h1><hr/><h3>. the Text Editor and Utils site.<br/>. We provide one stop solution for your text utils needs.</h3></div>}/>
+      <Route path="*" element={<h2 className='container'>Page Under Construction . . . <hr/><h6>Try visiting again after sometime.</h6></h2>}/>
+    </Routes>
     {/* <div className="blank"> */}
       {/* Hello {name}! */}
     {/* </div> */}
-    <Progressbar styleProg={styleProg}/>
-    <TextForm setMsg={setMsg} setProg={setProg}/>
-    {/* <About/> */}
+
+    </Router>
     </>
   );
 }
