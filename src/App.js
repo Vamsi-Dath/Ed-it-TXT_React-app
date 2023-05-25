@@ -34,15 +34,15 @@ function App() {
     <Router>
     <Navbar additional_item="Vamsi_I"/>
     <Routes>
-      <Route path="/" element={<>
+      <Route path="/Ed-it-TXT_React-app/" element={<>
         <Alert alert={alert} />
         <Progressbar styleProg={styleProg}/>
         <TextForm setMsg={setMsg} setProg={setProg}/>
         </>
       }/>
-      <Route path="/about" element={<About />}/>
-      <Route path="/services" element={<div className='container'><h1>Welcome to Ed-it TXT</h1><hr/><h3>. the Text Editor and Utils site.<br/>. We provide one stop solution for your text utils needs.</h3></div>}/>
-      <Route path="*" element={<h2 className='container'>Page Under Construction . . . <hr/><h6>Try visiting again after sometime.</h6></h2>}/>
+      <Route path="/Ed-it-TXT_React-app/about" element={<About />}/>
+      <Route path="/Ed-it-TXT_React-app/services" element={<div className='container'><h1>Welcome to Ed-it TXT</h1><hr/><h3>. the Text Editor and Utils site.<br/>. We provide one stop solution for your text utils needs.</h3></div>}/>
+      <Route path="/Ed-it-TXT_React-app/*" element={<h2 className='container'>Page Under Construction . . . <hr/><h6>Try visiting again after sometime.</h6></h2>}/>
     </Routes>
     {/* <div className="blank"> */}
       {/* Hello {name}! */}
