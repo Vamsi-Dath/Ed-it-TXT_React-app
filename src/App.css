@@ -47,7 +47,7 @@ textarea{
 }
 button{
   /* display: block; */
-  margin: 10px 5px;
+  margin: 10px 2px;
   padding: 5px 15px;
   border-radius: 15px;
   border-color: rgb(67, 85, 30);
@@ -58,4 +58,7 @@ button{
 }
 #progressBar{
   margin:0 10%;
+}
+.heightProg{
+  height:70px;
 }
