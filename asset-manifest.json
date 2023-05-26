@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Ed-it-TXT_React-app/static/css/main.f16512cc.css",
-    "main.js": "/Ed-it-TXT_React-app/static/js/main.5d3173d6.js",
+    "main.css": "/Ed-it-TXT_React-app/static/css/main.67485704.css",
+    "main.js": "/Ed-it-TXT_React-app/static/js/main.8633d7bc.js",
     "static/js/787.e5b4710f.chunk.js": "/Ed-it-TXT_React-app/static/js/787.e5b4710f.chunk.js",
     "index.html": "/Ed-it-TXT_React-app/index.html",
-    "main.f16512cc.css.map": "/Ed-it-TXT_React-app/static/css/main.f16512cc.css.map",
-    "main.5d3173d6.js.map": "/Ed-it-TXT_React-app/static/js/main.5d3173d6.js.map",
+    "main.67485704.css.map": "/Ed-it-TXT_React-app/static/css/main.67485704.css.map",
+    "main.8633d7bc.js.map": "/Ed-it-TXT_React-app/static/js/main.8633d7bc.js.map",
     "787.e5b4710f.chunk.js.map": "/Ed-it-TXT_React-app/static/js/787.e5b4710f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f16512cc.css",
-    "static/js/main.5d3173d6.js"
+    "static/css/main.67485704.css",
+    "static/js/main.8633d7bc.js"
   ]
 }
