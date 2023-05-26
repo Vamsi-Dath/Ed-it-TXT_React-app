@@ -29,12 +29,12 @@ export default function TextForm(props) {
         var arr = text.split(/[ ]+/)
         setText(arr.join(" "))
         props.setMsg("success","Text is free of extra spaces.")
-        props.setProg(text.split(" ").length>=100?100:text.split(" ").length);
+        props.setProg(text.split(/\s+/).filter((element)=>{return element.length!==0}).length>=100?100:text.split(" ").length);
     }
 
     const textHandle = (event)=>{
         setText(event.target.value);
-        props.setProg(text.split(" ").length>=100?100:text.split(" ").length);
+        props.setProg(text.split(/\s+/).filter((element)=>{return element.length!==0}).length>=100?100:text.split(/\s+/).filter((element)=>{return element.length!==0}).length);
     }
 
     const [text, setText] = useState("")
@@ -53,11 +53,15 @@ export default function TextForm(props) {
         <h2>Your Text Summary :</h2>
         <p>
             No. of characters : {text.length} <br/>
-            No. of Words : {text.split(" ").length} /100
+            No. of Words : {text.split(/\s+/).filter((element)=>{return element.length!==0}).length} /100
         </p>
         {/* <div className="btn btn-primary">
             Hello world
         </div> */}
+        <h3>Text preview : </h3>
+        <p>
+            {text}
+        </p>
     </div>
     </>
   )
